@@ -1,0 +1,26 @@
+$body = @{username="user"; password="12345"} | ConvertTo-Json
+Invoke-WebRequest -Uri http://localhost:5000/register -Method POST -Body $body -ContentType "application/json"
+
+StatusCode        : 201
+StatusDescription : Created
+Content           : {"message":"User registered
+                    successfully"}
+RawContent        : HTTP/1.1 201 Created
+                    Connection: keep-alive
+                    Keep-Alive: timeout=5
+                    Content-Length: 42
+                    Content-Type: application/json;      
+                    charset=utf-8
+                    Date: Thu, 19 Feb 2026 16:01:38 GMT  
+                    ETag: W/"2a-nMoFx54+czTntmS...       
+Forms             : {}
+Headers           : {[Connection, keep-alive],
+                    [Keep-Alive, timeout=5],
+                    [Content-Length, 42],
+                    [Content-Type, application/json;     
+                    charset=utf-8]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : System.__ComObject
+RawContentLength  : 42

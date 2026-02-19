@@ -1,0 +1,15 @@
+PS C:\Users\adity\.vscode\React\expressBookReviews\final_project> curl -X POST http://localhost:5000/register -H "Content-Type: application/json" -d "{"username":"User","password":"1234"}"                
+Invoke-WebRequest : Cannot bind parameter 'Headers'. 
+Cannot convert the "Content-Type: application/json"      
+value of type "System.String" to type
+"System.Collections.IDictionary".
+At line:1 char:48
++ ... //localhost:5000/register -H "Content-Type:        
+application/json" -d "{"u ...
++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Inv  
+   oke-WebRequest], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMe  
+   ssage,Microsoft.PowerShell.Commands.InvokeWebReques   
+  tCommand
